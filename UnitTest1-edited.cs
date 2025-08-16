@@ -19,9 +19,9 @@ namespace StoryApp
         [OneTimeSetUp]
         public void Setup()
         {
-            string token = GetJwtToken("yoanipetrov", "123456abv");
+Â  Â  Â  Â  Â    string token = GetJwtToken("yoanipetrov", "123456abv");
 
-            var options = new RestClientOptions(baseUrl)
+Â  Â  Â  Â      var options = new RestClientOptions(baseUrl)
             {
                 Authenticator = new JwtAuthenticator(token)
             };
@@ -29,7 +29,7 @@ namespace StoryApp
             client = new RestClient(options);
         }
 
-        private string GetJwtToken(string username, string password)
+Â  Â  Â  Â  private string GetJwtToken(string username, string password)
         {
             var loginClient = new RestClient(baseUrl);
 
